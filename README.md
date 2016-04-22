@@ -3,4 +3,4 @@ For most of my use cases, extensive Frameworks such as Biopython or scikit-bio a
 This framework aims at providing a bunch of modules for bioinformatics that are lightweight and super-easy to use. At the moment it is limited to some file reading and writing routines, but who knows what comes in the future. 
 
 # Installation
-`pip install microbio`
+`pip install microbio` (not yet ;) )
