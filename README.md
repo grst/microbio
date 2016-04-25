@@ -1,5 +1,5 @@
 # Microbio
-* a minimal Bioinformatics framework  
+*a minimal Bioinformatics framework*  
 
 For most of my use cases, extensive frameworks such as Biopython or scikit-bio are complete overkill. These frameworks are handling everything as an object (e.g. Sequences) which is certainly helpful in some cases, but often it's just more straightforward to save the sequences as plain python strings. 
 
