@@ -1,4 +1,8 @@
-# Reading fasta
+# Fasta
+Fasta is a commonly used format for biological sequences. 
+See the [NCBI Website](http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml) for a formal specification. 
+
+## Reading fasta
 is as easy as 
 ```python
 r = FastaReader(file)
@@ -9,7 +13,7 @@ for header, seq in r.get_entries():
 
 file can either be a path or a file object. 
 
-# Writing fasta
+## Writing fasta
 ```python
 w = FastaWriter(file, split=60)
 header = "some_random_nucleotides"
