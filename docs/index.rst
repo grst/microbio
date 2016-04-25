@@ -1,4 +1,4 @@
-.. include ../README.md
+.. include test.md
 
 .. toctree::
     :maxdepth: 2
