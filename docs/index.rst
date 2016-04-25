@@ -1,4 +1,4 @@
-.. include test.md
+.. include:: test.md
 
 Contents
 ========
@@ -7,4 +7,4 @@ Contents
 
     inout
 
-.. include footer.rst
+.. include:: footer.rst
