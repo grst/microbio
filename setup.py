@@ -3,7 +3,7 @@ from setuptools import find_packages
 setup(
   name = 'microbio',
   packages = find_packages(exclude=['docs','tests*','dist']), # this must be the same as the name above
-  version = '0.1',
+  version = '0.1.1',
   description = 'A minimalist Bioinformatics framework',
   author = 'Gregor Sturm',
   author_email = 'gregor.sturm@cs.tum.edu',
