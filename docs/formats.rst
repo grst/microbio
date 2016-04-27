@@ -19,7 +19,7 @@ is as easy as
 
 file can either be a path or a file object. 
 
-.. autoclass:: fasta.FastaReader
+.. autoclass:: formats.fasta.FastaReader
     :members:
 
 Writing fasta
@@ -36,7 +36,8 @@ Writing fasta
 again, file can be a path of a file object. 
 ``split`` speficies, after how many characters a sequence will be wrapped in multiple lines. Default is 80.
 
-.. automodule:: formats.fasta
+
+.. autoclass:: formats.fasta.FastaWriter
     :members:
 
 Fast5
