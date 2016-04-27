@@ -11,11 +11,12 @@ Reading fasta
 is as easy as 
 
 ::
-    python
-    r = FastaReader(file)
-    for header, seq in r.get_entries():
-        print header
-    print seq
+
+  python
+  r = FastaReader(file)
+  for header, seq in r.get_entries():
+      print header
+  print seq
 
 file can either be a path or a file object. 
 
@@ -23,6 +24,7 @@ Writing fasta
 ~~~~~~~~~~~~~    
 
 ::
+
     w = FastaWriter(file, split=60)
     header = "some_random_nucleotides"
     seq = "ACTGACATT"
