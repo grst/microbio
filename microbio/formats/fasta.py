@@ -7,7 +7,16 @@ from itertools import groupby
 
 
 class FastaReader(object):
+    """
+    Read fasta files into tuples (header, seq).
+    """
     def __init__(self, file):
+        """
+        Args:
+            file: The fasta file. Can either be a name or a handle.
+
+        """
+
         if not hasattr(file, 'read'):
             self.file = open(file, 'r')
         else:
@@ -17,7 +26,8 @@ class FastaReader(object):
         """
         Get the next Entry from the fasta file.
 
-        Returns: Generator, which yields (header, sequence) tuples
+        Returns:
+            Generator, which yields (header, sequence) tuples
 
         """
         for isheader, group in groupby(self.file, lambda line: line[0] == ">"):
@@ -28,16 +38,22 @@ class FastaReader(object):
                 yield header, seq
 
     def close(self):
+        """Close file handle"""
         self.file.close()
 
 
 class FastaWriter(object):
     """
-    Very simple fasta file format writer.
+    Write fasta files from tuples (header, seq)
     """
     SPLIT = 80
 
     def __init__(self, file, split = SPLIT):
+        """
+        Args:
+            file: The output fasta file. Can either be a (writeable) file handle or a path
+
+        """
         self.split = split
         if not hasattr(file, 'write'):
             self.file = open(file, 'w')
@@ -49,7 +65,7 @@ class FastaWriter(object):
         Write Entry to File
 
         Args:
-            header: >sequence_header
+            header: >sequence_header (without >)
             sequence: ACTGATT...
         """
         sequence = [sequence[i:i+self.split] for i in range(0, len(sequence), self.split)]
@@ -61,5 +77,6 @@ class FastaWriter(object):
         self.file.flush()
 
     def close(self):
+        """Close file handle"""
         self.file.close()
 

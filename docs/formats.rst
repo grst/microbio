@@ -14,4 +14,3 @@ Fast5
     :members:
 
 
-.. include:: footer.rst
