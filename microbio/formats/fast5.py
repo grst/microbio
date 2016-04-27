@@ -58,7 +58,8 @@ class Fast5File(object):
 
     def get_id(self):
         """
-        Returns: unique identifier for f5 file.
+        Returns:
+            unique identifier for f5 file.
         """
         return "ch_{0}_file_{1}".format(self.channel_id, self.file_id)
 
@@ -70,7 +71,7 @@ class Fast5File(object):
             strand: either "template" or "complement"
 
         Returns:
-            {shift: foo, drift: foo, scale: foo} or None if strand not in File
+            dict: {shift: foo, drift: foo, scale: foo} or None if strand not in File
 
         """
         assert strand in ["template", "complement"]
