@@ -9,7 +9,7 @@ This framework aims at providing a bunch of modules for bioinformatics that are 
 Installation
 ------------
 
-`pip install microbio` (not yet ;) )
+``pip install microbio``
 
 Contributing
 ------------

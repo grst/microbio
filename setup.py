@@ -7,7 +7,8 @@ setup(
   author = 'Gregor Sturm',
   author_email = 'gregor.sturm@cs.tum.edu',
   url = 'https://github.com/grst/microbio', # use the URL to the github repo
-  download_url = 'https://github.com/grst/microbio',
   keywords = ['bioinformatics', 'framework'], # arbitrary keywords
+  license = 'MIT',
   classifiers = [],
 )
+

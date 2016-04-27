@@ -1,16 +1,16 @@
 Input/Output
 ============
 
-.. automodule:: io 
+.. automodule:: formats 
 
 Fasta
 =====
-.. automodule:: io.fasta
+.. automodule:: formats.fasta
     :members:
 
-Test
-====
-.. automodule:: io 
+Fast5
+=====
+.. automodule:: formats.fast5 
     :members:
 
 
