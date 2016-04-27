@@ -1,7 +1,5 @@
 """
-Read and write fasta format [1].
-
-[1] http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml
+Read and write [fasta format](http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml)
 """
 from itertools import groupby
 
@@ -52,6 +50,7 @@ class FastaWriter(object):
         """
         Args:
             file: The output fasta file. Can either be a (writeable) file handle or a path
+            split: specifies after how many characters a sequence line will be wrapped.
 
         """
         self.split = split
