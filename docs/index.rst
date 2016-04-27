@@ -5,6 +5,6 @@ Contents
 .. toctree::
     :maxdepth: 2
 
-    inout
+    io 
 
 .. include:: footer.rst
