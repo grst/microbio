@@ -12,13 +12,15 @@ is as easy as
 
 ::
 
-  python
   r = FastaReader(file)
   for header, seq in r.get_entries():
       print header
-  print seq
+      print seq
 
 file can either be a path or a file object. 
+
+.. autoclass:: fasta.FastaReader
+    :members:
 
 Writing fasta
 ~~~~~~~~~~~~~    
