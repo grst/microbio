@@ -1,10 +1,10 @@
-.. include:: ../README.md
+.. include:: ../README.rst
 
 Contents
 ========
 .. toctree::
     :maxdepth: 2
 
-    io 
+    formats 
 
 .. include:: footer.rst
