@@ -5,8 +5,12 @@ File Formats (Input/Output)
 
 Fasta
 -----
-**Reading fasta** is as easy as 
-.. code-block:: python
+
+Reading fasta
+~~~~~~~~~~~~~
+is as easy as 
+
+::
     python
     r = FastaReader(file)
     for header, seq in r.get_entries():
@@ -15,8 +19,10 @@ Fasta
 
 file can either be a path or a file object. 
 
-**Writing fasta**:
-.. code-block:: python
+Writing fasta
+~~~~~~~~~~~~~    
+
+::
     w = FastaWriter(file, split=60)
     header = "some_random_nucleotides"
     seq = "ACTGACATT"
