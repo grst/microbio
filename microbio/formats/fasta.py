@@ -30,7 +30,7 @@ class FastaReader(object):
         """
         for isheader, group in groupby(self.file, lambda line: line[0] == ">"):
             if isheader:
-                header = next(group)[1:]
+                header = next(group)[1:].strip()
             else:
                 seq = "".join(line.strip() for line in group)
                 yield header, seq
